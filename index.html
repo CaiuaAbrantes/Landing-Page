@@ -8,18 +8,133 @@
 </head>
 <body class="main-bg">
     <aside class="menu">
-        <section class="main-content menu-content">
-            <h1><a href="#">LOGO</a></h1>
+        <div class="main-content menu-content">
+            <h1><a href="#home">LOGO</a></h1>
             <nav>
                 <ul>
-                    <li><a href="">intro</a></li>
-                    <li><a href="">top 3</a></li>
-                    <li><a href="">gallery</a></li>
-                    <li><a href="">work</a></li>
-                    <li><a href="">contact</a></li>
+                    <li><a href="#intro">intro</a></li>
+                    <li><a href="#mygrid">grid-one</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#pricing">princing-table</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </aside>
+    <div class="menu-space"></div>
+
+    <section class="intro main-bg" id="home">
+        <div class="main-content intro-content">
+            <div class="intro-text">
+                <h2>Janeiro nos tras Firefox 85</h2>
+                <p>O Firefox é um navegador de código aberto desenvolvido pela Mozilla Foundation. 
+                    Seu site oficial serve como portal central para informações, downloads e suporte.
+                    A página apresenta as principais funcionalidades do navegador, como a proteção aprimorada contra
+                    rastreamento e a sincronização entre dispositivos.
+                    Oferece também acesso direto para baixar a versão mais recente do software,
+                    compatível com diversos sistemas operacionais. O site destaca o compromisso 
+                    da Mozilla com uma internet aberta e a privacidade do usuário.
+                    É uma fonte confiável para atualizações, 
+                    documentação técnica e para conhecer mais sobre os projetos 
+                    e a missão da organização por trás do Firefox.</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/undraw_static-assets_di5m.svg" alt="Logo de HTML Css e jS">
+            </div>
+        </div>
+    </section>  
+
+    <section class="white-bg section" id="intro">
+        <div class="top3-content">
+            <h2>TOP 3 JOBS</h2>
+            <p>A seleção de um "top 3" de palavras é um exercício subjetivo, que reflete valores e contextos.
+                 Palavras como "amor", "liberdade" e "paz" frequentemente emergem em tais listas, 
+                 por representarem conceitos universais e aspiracionais. Outras, como "trabalho", "saúde" ou "família", 
+                 denotam pilares fundamentais da existência humana. A análise lexical pode revelar prioridades coletivas
+                  ou individuais em um dado momento histórico. Este ranking não é definitivo, mas serve como um ponto de
+                   partida para reflexão sobre comunicação e significado.
+                 A importância de cada termo reside em sua capacidade de condensar ideias complexas e
+                  emocionalmente significativas.
+                </p>
+        </div>
+    </section>
+    <section class="grid-one main-bg section" id="mygrid">
+        <div class="grid-one-content">
+            <h2>My Grid</h2>   
+            <p>uma breve descricao</p>
+            <div style="height: 5rem;"></div>
+            <div class="grid">
+                <article>
+                    <h3>teste 1</h3>
+                    <p>Lorem IPSUM ASDADS DSADSADSA DSAD ASDS A</p> 
+                </article>      
+                <article>
+                    <h3>teste 2</h3>
+                    <p>Lorem IPSUM ASDADS DSADSADSA DSAD ASDS A</p> 
+                </article>    
+                <article>
+                    <h3>teste 3</h3>
+                    <p>Lorem IPSUM ASDADS DSADSADSA DSAD ASDS A</p> 
+                </article>    
+            </div>
+    </section>
+
+    <section class="grid-one white-bg section" id="gallery">
+        <div class="grid-one-content">
+            <div style="height: 5rem;"></div>
+            <h2>Gallery</h2>   
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?" alt="imagem aleatoria">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?r=1" alt="imagem aleatoria">
+                </div>   
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360" alt="imagem aleatoria">
+                </div>         
+            </div>
+    </section>
+    <section class="white-bg section" id="pricing">
+        <div class="top3-content">
+            <h2>Pricing</h2>
+            <p>Preços refletem o valor atribuído a um produto ou serviço, considerando custos, qualidade e demanda. Um bom preço deve ser justo para quem compra e sustentável para quem vende. Mais do que números, preços comunicam posicionamento, confiança e a proposta de valor de uma marca.
+            </p>
+            <div class="responsive-table">
+                <table>
+                    <caption>pricing table</caption>
+                    <thead>
+                        <tr>
+                            <th>title 1</th>
+                            <th>title 2</th>
+                            <th>title 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td>Testando</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

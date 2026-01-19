@@ -1,6 +1,7 @@
 :root{
     --gap:3rem;
     --primary-color: #0A1128;
+    --light: #e0e0e0;
 }
 
 * {
@@ -10,12 +11,14 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
   color: var(--primary-color);
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,7 +31,10 @@ h1{
 }
 
 h2{
-    font-size: 5.5rem;
+    line-height: 1;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
 }
 
 h3{
@@ -56,24 +62,26 @@ a{
 }
 
 .main-content{
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 8rem var(--gap);
 }
 .white-bg{
     background: white;
+    color: #0A1128;
 }
 .section{
     min-height: 100vh;
 }
 .menu{
+    z-index: 1;
     background: white;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     width: 100%;
-    border-bottom: 1px solid color(rgb(211, 211, 211));
+    border-bottom: 0.1rem solid color(rgb(211, 211, 211));
 }
 
 .menu-content{
@@ -105,4 +113,100 @@ a{
 
 .menu ul li a:hover {
     background-color: #eceff1 ;
+}
+.menu-space{
+    height: 6.5rem;
+}
+
+.intro-content{
+    position: relative;
+    top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.intro-text, .intro-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.top3-content{
+    margin: 0 auto;
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.grid-one-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+    margin-left: 2.5rem;
+}
+.grid-one-content h2{
+    margin-top: -10rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.grid article h3{
+    color: #0A1128;
+    font-size: 3rem;
+    position: relative;
+}
+
+.gallery-img{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-img img{
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover{
+    transform: translate(3%,3%) scale(1.2) rotate(5deg);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td, table th{
+    white-space: nowrap;
+    text-align: left;
+    border: 0.1rem solid var(--light);
+}
+tfoot td, table th{
+    background: var(--light);
+}
+table caption{
+    font-size: 1.6rem;
+    font-style: italic;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+.responsive-table{
+    min-width: 36rem;
+    overflow: hidden;
+    overflow-x: auto;
 }
